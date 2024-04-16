@@ -11,6 +11,7 @@ import org.example.employee.config.DisplayDataConfig;
 import org.example.employee.dto.EmployeePairWorkingTogether;
 import org.example.employee.parser.DateParser;
 import org.example.employee.project.ProjectCreatorImpl;
+import org.example.employee.project.ProjectParser;
 import org.example.employee.project.ProjectWorker;
 import org.example.employee.project.dto.Project;
 import org.example.employee.parser.CSVParser;
@@ -66,7 +67,7 @@ public class Main extends Application {
                 csvParser.parseContent(resource.getPath());
 
         DateParser dateParser = new DateParser();
-        ProjectWorker projectWorker = new ProjectWorker(new ProjectCreatorImpl(dateParser),new ProjectFieldValidator(dateParser));
+        ProjectWorker projectWorker = new ProjectWorker(new ProjectCreatorImpl(dateParser),new ProjectFieldValidator(dateParser), new ProjectParser());
 
         List<Project> projects = projectWorker.validateAndConvertContentToProjects(content);
         EmployeePairWorkingTogether pairWithMaxWorkingHourForAllProjects = projectWorker.getThePairWithMaxWorkingHourForAllProjects(projects);

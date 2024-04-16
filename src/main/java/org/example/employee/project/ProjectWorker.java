@@ -17,8 +17,8 @@ public class ProjectWorker {
     private final ProjectParser projectParser;
     private final FieldValidator fieldValidator;
 
-    public ProjectWorker(ProjectCreator projectCreator, FieldValidator fieldValidator) {
-        this.projectParser = new ProjectParser();
+    public ProjectWorker(ProjectCreator projectCreator,FieldValidator fieldValidator, ProjectParser projectParser) {
+        this.projectParser = projectParser;
         this.projectCreator = projectCreator;
         this.fieldValidator = fieldValidator;
     }

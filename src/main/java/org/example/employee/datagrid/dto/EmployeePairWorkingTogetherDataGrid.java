@@ -1,4 +1,4 @@
-package org.example.employee.dto;
+package org.example.employee.datagrid.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

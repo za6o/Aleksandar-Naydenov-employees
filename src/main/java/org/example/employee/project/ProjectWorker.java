@@ -1,12 +1,10 @@
 package org.example.employee.project;
 
 import org.example.employee.dto.EmployeePairWorkingTogether;
-import org.example.employee.dto.EmployeePairWorkingTogetherDataGrid;
+import org.example.employee.datagrid.dto.EmployeePairWorkingTogetherDataGrid;
 import org.example.employee.exceptions.DateFormatParserException;
-import org.example.employee.parser.DateParser;
 import org.example.employee.project.dto.Project;
 import org.example.employee.validator.FieldValidator;
-import org.example.employee.validator.ProjectFieldValidator;
 
 import java.util.Collections;
 import java.util.List;

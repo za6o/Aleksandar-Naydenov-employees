@@ -1,4 +1,4 @@
-package org.example.employee.config;
+package org.example.employee.datagrid.config;
 
 public interface DisplayDataConfig<T> {
 

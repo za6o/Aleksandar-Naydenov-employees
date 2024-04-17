@@ -1,9 +1,9 @@
-package org.example.employee.config;
+package org.example.employee.datagrid.config;
 
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import org.example.employee.dto.EmployeePairWorkingTogetherDataGrid;
+import org.example.employee.datagrid.dto.EmployeePairWorkingTogetherDataGrid;
 
 public class DataGridDisplayDataConfig implements DisplayDataConfig<TableView<EmployeePairWorkingTogetherDataGrid>> {
 

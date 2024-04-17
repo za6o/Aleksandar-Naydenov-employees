@@ -5,7 +5,7 @@ import org.example.employee.exceptions.ProjectsNotFound;
 import org.example.employee.project.dto.Project;
 import org.example.employee.dto.EmployeePair;
 import org.example.employee.dto.EmployeePairWorkingTogether;
-import org.example.employee.dto.EmployeePairWorkingTogetherDataGrid;
+import org.example.employee.datagrid.dto.EmployeePairWorkingTogetherDataGrid;
 
 import java.util.ArrayList;
 import java.util.Collections;
